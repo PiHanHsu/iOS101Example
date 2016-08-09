@@ -13,6 +13,8 @@
 		E80FB4A71D5A22D8008EE719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E80FB4A51D5A22D8008EE719 /* LaunchScreen.storyboard */; };
 		E80FB4AF1D5A2318008EE719 /* FinalCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80FB4AE1D5A2318008EE719 /* FinalCodeViewController.swift */; };
 		E80FB4B11D5A28A2008EE719 /* BullsAndCowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80FB4B01D5A28A2008EE719 /* BullsAndCowsViewController.swift */; };
+		E80FB4B41D5A2AB6008EE719 /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80FB4B21D5A2AB6008EE719 /* ImageListViewController.swift */; };
+		E80FB4B51D5A2AB6008EE719 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80FB4B31D5A2AB6008EE719 /* ImageDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E80FB4A81D5A22D8008EE719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E80FB4AE1D5A2318008EE719 /* FinalCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalCodeViewController.swift; sourceTree = "<group>"; };
 		E80FB4B01D5A28A2008EE719 /* BullsAndCowsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BullsAndCowsViewController.swift; sourceTree = "<group>"; };
+		E80FB4B21D5A2AB6008EE719 /* ImageListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageListViewController.swift; sourceTree = "<group>"; };
+		E80FB4B31D5A2AB6008EE719 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				E80FB4A81D5A22D8008EE719 /* Info.plist */,
 				E80FB4AE1D5A2318008EE719 /* FinalCodeViewController.swift */,
 				E80FB4B01D5A28A2008EE719 /* BullsAndCowsViewController.swift */,
+				E80FB4B21D5A2AB6008EE719 /* ImageListViewController.swift */,
+				E80FB4B31D5A2AB6008EE719 /* ImageDetailViewController.swift */,
 			);
 			path = iOS101Example;
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			files = (
 				E80FB4AF1D5A2318008EE719 /* FinalCodeViewController.swift in Sources */,
 				E80FB4B11D5A28A2008EE719 /* BullsAndCowsViewController.swift in Sources */,
+				E80FB4B41D5A2AB6008EE719 /* ImageListViewController.swift in Sources */,
 				E80FB49D1D5A22D8008EE719 /* AppDelegate.swift in Sources */,
+				E80FB4B51D5A2AB6008EE719 /* ImageDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
