@@ -294,7 +294,7 @@
         <scene sceneID="KgF-f3-DD2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OKP-vT-DuP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Games" id="soN-jb-cos"/>
+                    <tabBarItem key="tabBarItem" title="Games" image="Tab_icon_games" id="soN-jb-cos"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="18M-Ds-9eF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -484,7 +484,7 @@
         <scene sceneID="jcF-PO-buW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MDN-yV-BaX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Images" id="Wod-Zb-hOM"/>
+                    <tabBarItem key="tabBarItem" title="Images" image="Tab-Icon_Images" id="Wod-Zb-hOM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="45q-Sd-f1r">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -502,6 +502,8 @@
     </scenes>
     <resources>
         <image name="San_Francisco" width="300" height="300"/>
+        <image name="Tab-Icon_Images" width="25" height="25"/>
+        <image name="Tab_icon_games" width="25" height="25"/>
         <image name="Tower_Eiffel" width="533" height="300"/>
     </resources>
 </document>
