@@ -595,20 +595,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess The City?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcW-VY-YrW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Guess The City?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcW-VY-YrW">
                                 <rect key="frame" x="238" y="71" width="125" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" image="NYC" translatesAutoresizingMaskIntoConstraints="NO" id="egI-Yi-Olr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" misplaced="YES" image="NYC" translatesAutoresizingMaskIntoConstraints="NO" id="egI-Yi-Olr">
                                 <rect key="frame" x="20" y="130" width="560" height="333"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdO-gx-tPH">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdO-gx-tPH">
                                 <rect key="frame" x="278" y="545" width="44" height="30"/>
                                 <state key="normal" title="Check"/>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Awr-ul-5bW">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Awr-ul-5bW">
                                 <rect key="frame" x="20" y="493" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -933,17 +933,17 @@
                                 <exclude reference="Jyp-Vv-OJe"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Gdt-xK-Z7s"/>
                                 <exclude reference="bwf-Id-sXZ"/>
                                 <exclude reference="p7z-kG-bm3"/>
-                                <exclude reference="Gdt-xK-Z7s"/>
-                                <exclude reference="Jbn-qg-Rwt"/>
                                 <exclude reference="msk-8h-Jcd"/>
                                 <exclude reference="pn9-Gh-ZL4"/>
+                                <exclude reference="Jbn-qg-Rwt"/>
                                 <exclude reference="Q3T-vj-YPv"/>
-                                <exclude reference="5YA-cI-zfU"/>
-                                <exclude reference="mYS-Bh-2Oo"/>
-                                <exclude reference="iqn-qL-P9H"/>
                                 <exclude reference="4Lk-Qk-gfO"/>
+                                <exclude reference="5YA-cI-zfU"/>
+                                <exclude reference="iqn-qL-P9H"/>
+                                <exclude reference="mYS-Bh-2Oo"/>
                                 <exclude reference="1XR-6k-paw"/>
                             </mask>
                         </variation>
@@ -955,8 +955,8 @@
                                 <include reference="msk-8h-Jcd"/>
                                 <include reference="pn9-Gh-ZL4"/>
                                 <include reference="Q3T-vj-YPv"/>
-                                <include reference="iqn-qL-P9H"/>
                                 <include reference="4Lk-Qk-gfO"/>
+                                <include reference="iqn-qL-P9H"/>
                                 <include reference="1XR-6k-paw"/>
                             </mask>
                         </variation>
@@ -965,9 +965,9 @@
                                 <include reference="Jyp-Vv-OJe"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Gdt-xK-Z7s"/>
                                 <include reference="bwf-Id-sXZ"/>
                                 <include reference="p7z-kG-bm3"/>
-                                <include reference="Gdt-xK-Z7s"/>
                                 <include reference="Jbn-qg-Rwt"/>
                                 <include reference="5YA-cI-zfU"/>
                                 <include reference="mYS-Bh-2Oo"/>

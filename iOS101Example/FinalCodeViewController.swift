@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FinalCodeViewController: UIViewController {
+class FinalCodeViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var inputNumberTextField: UITextField!
     @IBOutlet var resultLabel: UILabel!
@@ -39,7 +39,17 @@ class FinalCodeViewController: UIViewController {
         nextPlayerImageView.layer.cornerRadius = 30.0
         nextPlayerImageView.clipsToBounds = true
         
+        //textFiled delegate
+        inputNumberTextField.delegate = self
+        
         createFinalCode()
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        print("return button pressed!!")
+        
+        return true
     }
     
     func createFinalCode() {
@@ -140,7 +150,8 @@ class FinalCodeViewController: UIViewController {
     
     //TODO 6: Each player can have 2 crads "return" / "pass"
     //        Each card can be used one time in a game.
-    
-    
+
 
 }
+
+
