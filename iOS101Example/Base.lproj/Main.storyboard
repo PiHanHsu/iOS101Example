@@ -250,12 +250,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter 4 Digits" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kdt-x0-mwA">
-                                <rect key="frame" x="20" y="72" width="115" height="30"/>
+                                <rect key="frame" x="20" y="93" width="115" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bc-oE-Xcb">
-                                <rect key="frame" x="165" y="72" width="37" height="30"/>
+                                <rect key="frame" x="165" y="87" width="37" height="30"/>
                                 <state key="normal" title="Enter"/>
                                 <connections>
                                     <action selector="enterButtonPressed:" destination="Zup-ov-xQg" eventType="touchUpInside" id="hhR-wc-1u4"/>
@@ -328,11 +328,18 @@
                                     <action selector="startANewGame:" destination="Zup-ov-xQg" eventType="touchUpInside" id="ckj-OO-NoZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QS-fx-uBj">
+                                <rect key="frame" x="93" y="72" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="cCn-xa-oei"/>
                     <connections>
+                        <outlet property="countLabel" destination="5QS-fx-uBj" id="iIs-a2-rU1"/>
                         <outlet property="inputTextField" destination="kdt-x0-mwA" id="sbw-6K-YCU"/>
                         <outletCollection property="resultLabels" destination="DJU-OZ-Bus" collectionClass="NSMutableArray" id="6lG-PP-dvw"/>
                         <outletCollection property="resultLabels" destination="hhT-4D-kyT" collectionClass="NSMutableArray" id="nkK-50-GXX"/>

@@ -13,6 +13,7 @@ class BullsAndCowsViewController: UIViewController {
     @IBOutlet var inputTextField: UITextField!
     @IBOutlet var resultLabels: [UILabel]!
     
+    @IBOutlet var countLabel: UILabel!
     // TODO: 1. decide the data type you want to use to store the answear
     
     var index = 0
@@ -22,6 +23,8 @@ class BullsAndCowsViewController: UIViewController {
         //TODO: 5. update layout with StackView
         //TODO: 6. Add auto lauout constrant
         super.viewDidLoad()
+        inputTextField.delegate = self
+        countLabel.text = "0/4"
         setGame()
     }
     
@@ -97,5 +100,20 @@ class BullsAndCowsViewController: UIViewController {
     //3. use table View to show the results
     //4. use your creation to add more fun feature
     
-
 }
+
+extension BullsAndCowsViewController: UITextFieldDelegate {
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
+        let newText = (inputTextField.text! as NSString).stringByReplacingCharactersInRange(
+            range, withString: string)
+        
+        if newText.characters.count <= 4 {
+            countLabel.text = "\(newText.characters.count)/4"
+            return true
+        }else{
+             return false
+        }
+    }
+}
+
