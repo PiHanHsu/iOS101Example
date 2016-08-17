@@ -96,7 +96,7 @@ class FoodPinTableViewController: UITableViewController {
         if segue.identifier == "ShowFoodPinDetail" {
             let vc = segue.destinationViewController as! FoodPinDetailTableViewController
             vc.imageName = restaurantNameArray[(tableView.indexPathForSelectedRow?.row)!]
-            
+            vc.restaurantName = restaurantNameArray[(tableView.indexPathForSelectedRow?.row)!]
         }
         
     }
