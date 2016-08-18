@@ -19,6 +19,7 @@
 		E89831D51D636C890018F03F /* FoodPinDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89831D41D636C890018F03F /* FoodPinDetailTableViewController.swift */; };
 		E89831D81D636CE70018F03F /* FoodPinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89831D61D636CE70018F03F /* FoodPinTableViewCell.swift */; };
 		E89831D91D636CE70018F03F /* FoodPinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89831D71D636CE70018F03F /* FoodPinTableViewCell.xib */; };
+		E89831FB1D64A78B0018F03F /* ClickableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89831FA1D64A78B0018F03F /* ClickableTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E89831D41D636C890018F03F /* FoodPinDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodPinDetailTableViewController.swift; sourceTree = "<group>"; };
 		E89831D61D636CE70018F03F /* FoodPinTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodPinTableViewCell.swift; sourceTree = "<group>"; };
 		E89831D71D636CE70018F03F /* FoodPinTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodPinTableViewCell.xib; sourceTree = "<group>"; };
+		E89831FA1D64A78B0018F03F /* ClickableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickableTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				E89831D41D636C890018F03F /* FoodPinDetailTableViewController.swift */,
 				E89831D61D636CE70018F03F /* FoodPinTableViewCell.swift */,
 				E89831D71D636CE70018F03F /* FoodPinTableViewCell.xib */,
+				E89831FA1D64A78B0018F03F /* ClickableTableViewCell.swift */,
 			);
 			path = iOS101Example;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E89831D31D636C740018F03F /* FoodPinTableViewController.swift in Sources */,
+				E89831FB1D64A78B0018F03F /* ClickableTableViewCell.swift in Sources */,
 				E80FB4AF1D5A2318008EE719 /* FinalCodeViewController.swift in Sources */,
 				E80FB4B11D5A28A2008EE719 /* BullsAndCowsViewController.swift in Sources */,
 				E80FB4B41D5A2AB6008EE719 /* ImageListViewController.swift in Sources */,

@@ -737,12 +737,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4bj-4L-h9M">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClickableTableViewCell" id="4bj-4L-h9M" customClass="ClickableTableViewCell" customModule="iOS101Example" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4bj-4L-h9M" id="bfT-a6-Hke">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTS-R9-yoO">
+                                            <rect key="frame" x="11" y="7" width="40" height="30"/>
+                                            <state key="normal" title="SayHi"/>
+                                            <connections>
+                                                <action selector="sayHi:" destination="4bj-4L-h9M" eventType="touchUpInside" id="1RY-df-XjU"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGu-pe-GZx">
+                                            <rect key="frame" x="505" y="7" width="87" height="30"/>
+                                            <state key="normal" title="SayGoodbye"/>
+                                            <connections>
+                                                <action selector="sayGoodBye:" destination="4bj-4L-h9M" eventType="touchUpInside" id="Bc8-U5-Wto"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="AGu-pe-GZx" firstAttribute="top" secondItem="bfT-a6-Hke" secondAttribute="topMargin" constant="-1" id="CIK-ze-oQX"/>
+                                        <constraint firstItem="AGu-pe-GZx" firstAttribute="trailing" secondItem="bfT-a6-Hke" secondAttribute="trailingMargin" id="lko-1p-cIy"/>
+                                        <constraint firstItem="yTS-R9-yoO" firstAttribute="top" secondItem="bfT-a6-Hke" secondAttribute="topMargin" constant="-1" id="mhk-0b-T1d"/>
+                                        <constraint firstItem="yTS-R9-yoO" firstAttribute="leading" secondItem="bfT-a6-Hke" secondAttribute="leadingMargin" constant="3" id="yNg-DW-GAL"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>

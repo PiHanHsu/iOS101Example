@@ -27,7 +27,7 @@ class FoodPinTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 2
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,15 +37,27 @@ class FoodPinTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("FoodPinTableViewCell", forIndexPath: indexPath) as! FoodPinTableViewCell
-        cell.foodPinImageView.image = UIImage(named: restaurantNameArray[indexPath.row])
-        cell.foodPinImageView.layer.cornerRadius = 8.0
-        cell.foodPinImageView.clipsToBounds = true
-        cell.nameLabel.text = restaurantNameArray[indexPath.row]
-        cell.typeLabel.text = restaurantTypeArray[indexPath.row]
-        cell.locationLabel.text = locationArray[indexPath.row]
-        cell.distanceLabel.text = "0.2km"
-        return cell
+        switch indexPath.section {
+        case 0:
+            let cell = tableView.dequeueReusableCellWithIdentifier("FoodPinTableViewCell", forIndexPath: indexPath) as! FoodPinTableViewCell
+            cell.foodPinImageView.image = UIImage(named: restaurantNameArray[indexPath.row])
+            cell.foodPinImageView.layer.cornerRadius = 8.0
+            cell.foodPinImageView.clipsToBounds = true
+            cell.nameLabel.text = restaurantNameArray[indexPath.row]
+            cell.typeLabel.text = restaurantTypeArray[indexPath.row]
+            cell.locationLabel.text = locationArray[indexPath.row]
+            cell.distanceLabel.text = "0.2km"
+            return cell
+        case 1:
+             let cell = tableView.dequeueReusableCellWithIdentifier("ClickableTableViewCell", forIndexPath: indexPath) as! ClickableTableViewCell
+             cell.delegate = self
+             return cell
+        default:
+            break
+        }
+        
+        return UITableViewCell()
+        
     }
     
 
@@ -100,6 +112,16 @@ class FoodPinTableViewController: UITableViewController {
         }
         
     }
-    
+}
 
+extension FoodPinTableViewController: ClickableTableViewCellDelegate {
+    
+    func sayHi() {
+        print("Hi")
+    }
+    
+    func sayGoodBye() {
+        print("Goodbye")
+    }
+    
 }
