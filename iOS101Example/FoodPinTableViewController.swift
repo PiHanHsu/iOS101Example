@@ -10,9 +10,9 @@ import UIKit
 
 class FoodPinTableViewController: UITableViewController {
 
-    let restaurantNameArray = ["鼎泰豐", "游壽司", "新天堂義大利麵", "竹里館"]
-    let restaurantTypeArray = ["點心小吃", "日本料理", "義大利麵", "特色台菜"]
-    let locationArray = ["台北市信義區二段194號", "台北市大安區麗水街7巷7號","台北市大安區師大路59巷8號", "台北市中山區台北市松江路182號2樓"]
+    var restaurantNameArray = ["鼎泰豐", "游壽司", "新天堂義大利麵", "竹里館"]
+    var restaurantTypeArray = ["點心小吃", "日本料理", "義大利麵", "特色台菜"]
+    var locationArray = ["台北市信義區二段194號", "台北市大安區麗水街7巷7號","台北市大安區師大路59巷8號", "台北市中山區台北市松江路182號2樓"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,13 +26,20 @@ class FoodPinTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+        
         return 2
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return restaurantNameArray.count
+        switch section {
+        case 0:
+            return restaurantNameArray.count
+        case 1:
+            return 1
+        default:
+            break
+        }
+        return 0
     }
 
     
@@ -72,17 +79,18 @@ class FoodPinTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            restaurantNameArray.removeAtIndex(indexPath.row)
+            restaurantTypeArray.removeAtIndex(indexPath.row)
+            locationArray.removeAtIndex(indexPath.row)
+        }
+        
+        tableView.reloadData()
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
