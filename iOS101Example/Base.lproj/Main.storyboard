@@ -785,8 +785,8 @@
         <!--Food Pin Detail Table View Controller-->
         <scene sceneID="jad-7q-a6n">
             <objects>
-                <tableViewController id="grw-Yz-xJy" customClass="FoodPinDetailTableViewController" customModule="iOS101Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="X0U-Kx-wOi">
+                <tableViewController hidesBottomBarWhenPushed="YES" id="grw-Yz-xJy" customClass="FoodPinDetailTableViewController" customModule="iOS101Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="X0U-Kx-wOi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
